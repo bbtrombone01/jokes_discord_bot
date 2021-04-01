@@ -1,0 +1,23 @@
+{
+  "name": "jokes_discord_bot",
+  "version": "1.0.0",
+  "description": "discord bot that can tell some jokes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbtrombone01/jokes_discord_bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbtrombone01/jokes_discord_bot/issues"
+  },
+  "homepage": "https://github.com/bbtrombone01/jokes_discord_bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.2"
+  }
+}
