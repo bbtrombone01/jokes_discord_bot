@@ -8,7 +8,7 @@ const discord_client = new Client
 
 
 discord_client.on(`ready`, ()=>{
-    console.log("time to tell some jokes")
+    message.send("time to tell some jokes")
 })
 
 discord_client.on(`message`,(message) =>{
