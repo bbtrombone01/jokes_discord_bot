@@ -1,4 +1,4 @@
-joke_list = [
+joke_array = [
     [[ `What is the best day to go to the beach?`],["Sunday, of course!"]], 
     [[`What bow can't be tied?`], [`A rainbow!`]],
     [[`How many tickles does it take to make an Octopus laugh?`], [`Ten-tickles.`]],
@@ -51,4 +51,4 @@ joke_list = [
     [[`What do you call a seagull that flies over the bay?`],[`A bagel!`]]
 ]
 
-module.exports = {arrayOfJokes: joke_list}
+module.exports = {jokesArray: joke_array}
