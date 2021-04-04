@@ -45,7 +45,10 @@ joke_list = [
     [[`What do you call a pile of kittens?`], [`A meowntain.`]],
     [[`Is this pool safe for diving?`], [`It deep ends.`]],
     [[`What is worse than raining cats and dogs?`], [`Hailing taxis!`]],
-    [[`What did the nose say to the finger?`], [`Quit picking on me!`]]
+    [[`What did the nose say to the finger?`], [`Quit picking on me!`]],
+    [[`What did one wall say to another?`], [`Let's meet up in the corner.`]],
+    [[`'What do you call a priest who becomes a lawyer?`], [`A father-in-law!'`]],
+    [[`What do you call a seagull that flies over the bay?`],[`A bagel!`]]
 ]
 
 module.exports = {arrayOfJokes: joke_list}

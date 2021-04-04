@@ -21,7 +21,7 @@ discord_client.on(`message`,(message) =>{
         if (message.content.slice(prefix.length) === "random joke"){
             console.log("set up this code later")
         }
-        if( indexOfJokeArray < 50){
+        if( indexOfJokeArray <= 50){
             console.log("progress")
             message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray-1][0])
             setTimeout(()=>{
