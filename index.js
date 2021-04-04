@@ -17,15 +17,20 @@ discord_client.on(`ready`, ()=>{
 discord_client.on(`message`,(message) =>{
     if (message.author.bot) return
     if (message.content.startsWith(prefix)){
-        let indexOfJokeArray = parseInt(message.content.slice(prefix.length))
-        if (message.content.slice(prefix.length) === "random joke"){
-            console.log("set up this code later")
-        }
+        let indexOfJokeArray = parseInt(message.content.slice(prefix.length))-1
         if( indexOfJokeArray <= 50){
-            console.log("progress")
-            message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray-1][0])
+            message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray][0])
             setTimeout(()=>{
-                message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray-1][1])
+                message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray][1])
+            },30000)
+        }
+        if (message.content.slice(prefix.length) === "random joke"){
+            min = Math.floor(0)
+            max = Math.ceil(50)
+            indexOfJokeArray = Math.floor(Math.random()* (max - min + 1) + min)
+            message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray][0])
+            setTimeout(()=>{
+                message.channel.send(arrayOfJokes.arrayOfJokes[indexOfJokeArray][1])
             },30000)
         }
     }
